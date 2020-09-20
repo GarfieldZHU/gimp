@@ -63,7 +63,7 @@ class Goat (Gimp.PlugIn):
             gi.require_version('Gdk', '3.0')
             from gi.repository import Gdk
 
-            GimpUi.ui_init("palette-offset.py")
+            GimpUi.init("palette-offset.py")
 
             dialog = GimpUi.Dialog(use_header_bar=True,
                                    title=_("Exercise a goat (Python 3)"),
